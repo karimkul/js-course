@@ -312,3 +312,50 @@
 //     return sum / arr.length;
 // }
 // console.log(calcAverage([2, 4, 6]));
+
+// 59. Using Google, StackOverflow and MDN
+// PROBLEM
+// We for a company building a smart home thermometr. Our most recent task is this : "Given a array temperatures of one day, colculate the temperature amplitude. Keep in mind that sometimes there might be sensor error."
+
+// const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
+
+// 1) Understanding the problem
+// - What is the temp  amplitude? Answer: difference between highest and lowest temp.
+// - How to compute min and max temperatures?
+// - What is sensor error? And what to do?
+
+// 2) Breaking up into sub-problems
+// - How to ignore sensor errors?
+// - Find max value in temp array
+// - Find min value in temp array
+
+// const calcTempAmplitude = function (temp) {
+//     let max = temp[0];
+//     let min = temp[0];
+//     for (let i = 0; i < temp.length; i++) {
+//         if (typeof temp[i] !== "number") continue;
+//         if (temp[i] > max) max = temp[i];
+//         if (temp[i] < min) min = temp[i];
+//     }
+//     // console.log(max, min);
+//     return max - min;
+// };
+// console.log(calcTempAmplitude(temperatures));
+
+// 60. Debugging (Fixing Errors)
+
+// 61. Debugging with the Console and Breakpoints
+// const measureKelvin = function () {
+//     const measurement = {
+//         type: "type",
+//         unit: "celsius",
+//         value: prompt("Degrees celsius:")
+//     };
+//     const kelvin = measureKelvin.value + 273;
+//     return kelvin;
+// };
+// console.log(measureKelvin());
+// console.warn(measureKelvin());
+// console.error(measureKelvin());
+
+// 62. Coding Challenge #1
